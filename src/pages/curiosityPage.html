@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html id="container">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+
+    <head>
+    <div id="head">
+        <h1>Cidades Inteligentes</h1>
+    </div>
+    </head>
+    <body>
+    <div id="wrapper">
+        <div id="menuWrapper">
+            <div id="menuBar">
+                <a id="topic" rel="stylesheet" href="../index.html">Desenvolvimento sustentável</a>
+                <br>
+                <a id="topic" rel="stylesheet" href="./intelligentCityPage.html">Cidades Inteligentes</a>
+                <br>
+                <a id="topic" rel="stylesheet" href="./curiosityPage.html">Curiosidades</a>
+                <br>
+            </div>
+        </div>
+        <div id="bodyWrapper">
+            <div id="textBox">
+                <p id="title">Curiosidades</p>
+                <p id="text">
+                    Cidades Inteligentes não necessariamente são cidades que utilizam tecnologias digitais para utilizar os recursos de maneira
+                    mais eficiente ou que simplesmente atuam na expansão do acesso à internet pelos cidadãos. Também é, mas vai muito além.
+                </p>
+
+                <div id="imgWrapper">
+                    <img src="../../assets/desenvolvimentoSustentavel.jpeg" alt="">
+                </div>
+                    
+                <p>
+                    Para ser alcançado, o desenvolvimento sustentável depende de planejamento e do reconhecimento de que os recursos naturais são finitos.
+                    Muitas vezes, desenvolvimento é confundido com crescimento econômico, que depende do consumo crescente de energia e recursos naturais. 
+                    Esse tipo de desenvolvimento tende a ser insustentável, pois leva ao esgotamento dos recursos naturais dos quais a humanidade depende.
+                    Atividades econômicas podem ser encorajadas em detrimento da base de recursos naturais dos países. Desses recursos depende não só 
+                    O desenvolvimento sustentável sugere, de fato, qualidade em vez de quantidade, com a redução do uso de matérias-primas e produtos e
+                    o aumento da reutilização e da reciclagem.
+                    Sustentabilidade e meio ambiente fazem referência a todos os recursos naturais necessário para a sobrevivência e o desenvolvimento da sociedade.
+                    A sustentabilidade busca o uso racional destes recursos naturais sem comprometer o meio ambiente preservando os uso das gerações futuras.
+                    a existência humana e a diversidade biológica, como o próprio crescimento econômico.
+                </p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
+
+<style>
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        border-radius: 8px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+    }
+
+    #imgWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    #container {
+        background-color: #E5E3C9;
+        font-family: montserrat;
+    }
+
+    #head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #B4CFB0;
+    }
+
+    #wrapper {
+        display: flex;
+        justify-self: space-between;
+    }
+
+    #menuWrapper {
+        width: 10%;
+        flex: 1;
+    }
+    
+    #menuBar {
+        display: block;
+        padding: 10px;
+        background-color: #789395;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    #topic {
+        color: black;
+    }
+
+    #topic:link {
+        text-decoration: none;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+    }
+
+    #topic:hover {
+        color:#B4CFB0;
+    }
+    
+    #bodyWrapper {
+        display: flex;
+        width: 70%;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    #textBox {
+        width: 70%;
+        padding: 40px;
+        border-radius: 8px;
+        background-color: #94B49F;
+    }
+
+    #text {
+        font-size: 15px;
+    }
+
+    #title {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 866px) {
+        #container {
+            background-color: red;
+        }
+
+        #menuWrapper {
+            display: none;
+        }
+    }
+</style>
