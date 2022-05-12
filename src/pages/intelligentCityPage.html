@@ -13,13 +13,29 @@
     <body>
     <div id="wrapper">
         <div id="menuWrapper">
-            <div id="menuBar">
-                <a id="topic" rel="stylesheet" href="../index.html">Desenvolvimento sustentável</a>
-                <br>
-                <a id="topic" rel="stylesheet" href="./intelligentCityPage.html">Cidades Inteligentes</a>
-                <br>
-                <a id="topic" rel="stylesheet" href="./curiosityPage.html">Curiosidades</a>
-                <br>
+            <div id="menuWrapper">
+                <ol id="menuBar">
+                    <ul id="topicList">
+                        <a id="topic" rel="stylesheet" href="../index.html" style="font-weight: bold;">
+                            Desenvolvimento sustentável
+                        </a>
+                    </ul>
+                    <ul id="topicList">
+                        <a id="topic" rel="stylesheet" href="historyPage.html" style="font-weight: bold;">
+                            Historia
+                        </a>
+                    </ul>
+                    <ul id="topicList">
+                        <a id="topic" rel="stylesheet" href="benefitsPage.html" style="font-weight: bold;">
+                            Pontos positivos
+                        </a>
+                    </ul>
+                    <ul id="topicList">
+                        <a id="topic" rel="stylesheet" href="curiosityPage.html" style="font-weight: bold;">
+                            Curiosidades
+                        </a>
+                    </ul>                              
+                </ol>
             </div>
         </div>
         <div id="bodyWrapper">
@@ -124,17 +140,20 @@
 </html>
 
 <style>
-    html, body {
+        html, body {
         margin: 0;
         padding: 0;
     }
 
     img {
         border-radius: 8px;
-        display: flex;
+        width: 75%;
         margin-top: 10px;
         margin-bottom: 10px;
-        justify-content: center;
+    }
+
+    ul {
+        margin-bottom: 5px;
     }
 
     #imgWrapper {
@@ -156,17 +175,19 @@
 
     #wrapper {
         display: flex;
-        justify-self: space-between;
+        justify-content: space-between;
     }
 
     #menuWrapper {
-        width: 10%;
+        display: block;
         flex: 1;
+        width: 10%;
     }
     
     #menuBar {
-        display: block;
         padding: 10px;
+        max-width: 600px;
+        min-width: 250px;
         background-color: #789395;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -188,7 +209,7 @@
     
     #bodyWrapper {
         display: flex;
-        width: 70%;
+        width: 80%;
         margin-top: 20px;
         margin-bottom: 20px;
         justify-content: center;
@@ -205,24 +226,46 @@
         font-size: 15px;
     }
 
-    #economy {
-        font-size: 20px;
-        font-weight: bold;
-    }
-
     #title {
         font-size: 20px;
         font-weight: bold;
     }
 
-    .title {
-        font-size: 20px;
-        font-weight: bold;
+
+    #titleView {
+        width: 100%;
     }
 
-    @media screen and (max-width: 866px) {
-        #container {
-            background-color: red;
+    #buttonBar {
+        display: none;
+    }
+
+    @media screen and (max-width: 980px) {
+        head {
+            justify-content: space-between;
+        }
+
+        #bodyWrapper {
+            width: 100%;
+        }
+
+        #menuWrapper {
+            display: none;
+        }
+
+        #buttonBar {
+            display: flex;
+            border: none;
+            font-size: 28px;
+            background-color: #B4CFB0;
+        }
+
+        #buttonBar:hover {
+            cursor: pointer;
+        }
+
+        #titleView {
+            width: 70%;
         }
     }
 </style>
